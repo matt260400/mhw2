@@ -158,7 +158,6 @@ function ricerca(event){
             }
             else{
                 item.classList.remove('nascondi')
-                test = 0
             }
         }
     }
@@ -167,8 +166,6 @@ function ricerca(event){
             item.classList.remove('nascondi')
         }
     }
-
-    
 }
 
 crea_elemento();
