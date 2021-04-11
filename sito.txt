@@ -1,0 +1,38 @@
+il div principale è sezione
+
+dobbiamo vedere se il genere che sto inserendo è già presente, altrimenti creo un div a posta
+
+creo il div card
+	inserisco l'immagine con classe immagine_artista
+	p con classe alias
+	p con classe descrizione
+	div con classe dettagli
+		p con classe mostra dettagli
+		p con immagine
+
+<div id="rock" class="nascondi">
+                <div class="linea"></div>
+                <h1 class="genere">Rock</h1>
+                <div class="artisti">
+                    <div class="card">
+                        <img src="gilmour.jpg" alt="" class="immagine_artista">
+                        <p class="alias">
+                            David Gilmour
+                        </p>
+                        <p class="descrizione">
+                            Formidabile musicista, è tra i più dotati e influenti esponenti del blues statunitense.
+                        </p>
+                        <div class="dettagli">
+                            <p class="mostra_dettagli">
+                                Mostra dettagli
+                            </p>
+                            <p>
+                                <img src="white_heart.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                
+            </div>
