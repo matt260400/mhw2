@@ -147,10 +147,12 @@ const searchBar = document.getElementById('search')
 searchBar.addEventListener('keyup', ricerca)
 
 function ricerca(event){
-    let inserimento = event.target.value.toLowerCase();
-    let card = document.querySelectorAll('.card');
+    const inserimento = event.target.value.toLowerCase();
+    const card = document.querySelectorAll('.card');
+    const pref = document.querySelector('#preferiti')
 
     if (inserimento !== "") {
+        pref.classList.add('nascondi')
         for(item of card){
             const nome = item.querySelector('.alias').textContent.toLowerCase()
             if(nome.indexOf(inserimento) === -1){
@@ -162,6 +164,9 @@ function ricerca(event){
         }
     }
     else{
+        if(document.querySelectorAll('#preferiti div.card').length !== 0){
+            document.querySelector('#preferiti').classList.remove('nascondi')
+        }
         for(item of card){
             item.classList.remove('nascondi')
         }
